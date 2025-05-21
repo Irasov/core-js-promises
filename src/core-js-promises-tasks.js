@@ -52,7 +52,7 @@ function getPromiseResult(source) {
  * [Promise.reject(1), Promise.resolve(2), Promise.resolve(3)]  => Promise fulfilled with 2
  * [Promise.resolve(1), Promise.reject(2), Promise.resolve(3)]  => Promise fulfilled with 1
  * [Promise.reject(1), Promise.reject(2), Promise.reject(3)]    => Promise rejected
- */
+ */ 
 function getFirstResolvedPromiseResult(promises) {
   return Promise.any(promises);
 }
